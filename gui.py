@@ -19,10 +19,10 @@ class Ui_main(object):
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setObjectName("horizontalLayout")
+
         self.tabla_resultados = QtWidgets.QTreeWidget(self.horizontalLayoutWidget)
         self.tabla_resultados.setObjectName("tabla_resultados")
-        item_0 = QtWidgets.QTreeWidgetItem(self.tabla_resultados)
-        item_0 = QtWidgets.QTreeWidgetItem(self.tabla_resultados)
+
         self.horizontalLayout.addWidget(self.tabla_resultados)
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(10, 20, 799, 119))
@@ -65,11 +65,13 @@ class Ui_main(object):
         self.tabla_resultados.headerItem().setText(1, _translate("main", "Nombre"))
         __sortingEnabled = self.tabla_resultados.isSortingEnabled()
         self.tabla_resultados.setSortingEnabled(False)
-        self.tabla_resultados.topLevelItem(0).setText(0, _translate("main", "ej 1"))
-        self.tabla_resultados.topLevelItem(0).setText(1, _translate("main", "eje 1"))
-        self.tabla_resultados.topLevelItem(1).setText(0, _translate("main", "eje 2"))
-        self.tabla_resultados.topLevelItem(1).setText(1, _translate("main", "eje 2"))
+
+        #self.tabla_resultados.topLevelItem(0).setText(0, _translate("main", "ej 1"))
+        #self.tabla_resultados.topLevelItem(0).setText(1, _translate("main", "eje 1"))
+        #self.tabla_resultados.topLevelItem(1).setText(0, _translate("main", "eje 2"))
+        #self.tabla_resultados.topLevelItem(1).setText(1, _translate("main", "eje 2"))
         self.tabla_resultados.setSortingEnabled(__sortingEnabled)
+        
         self.groupBox.setTitle(_translate("main", "Busqueda"))
         self.btn_buscar.setText(_translate("main", "Buscar"))
         self.actionBuscar.setText(_translate("main", "actionBuscar"))
